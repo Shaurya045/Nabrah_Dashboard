@@ -9,7 +9,7 @@ export default function PublicRoute() {
   }
 
   if (isAuthenticated) {
-    return <Navigate to="/dashboard" replace />;
+    return <Navigate to="/project" replace />;
   }
 
   return <Outlet />;

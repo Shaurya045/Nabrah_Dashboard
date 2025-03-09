@@ -27,16 +27,17 @@ export default function Login() {
     setIsLoading(true);
 
     const formData = new FormData(event.currentTarget);
-    const email = formData.get("email") as string;
+    const username = formData.get("username") as string;
     const password = formData.get("password") as string;
 
     try {
-      await login(email, password);
+      await login(username, password);
       //   toast({
       //     title: "Success",
       //     description: "You have been logged in successfully.",
       //   });
     } catch (error) {
+      console.error("Error logging in:", error);
       //   toast({
       //     variant: "destructive",
       //     title: "Error",
@@ -69,18 +70,18 @@ export default function Login() {
 
             <form onSubmit={onSubmit} className="space-y-5">
               <div className="space-y-2">
-                <Label htmlFor="email" className="text-white">
+                <Label htmlFor="username" className="text-white">
                   Email
                 </Label>
                 <Input
-                  id="email"
+                  id="username"
                   placeholder="name@example.com"
                   type="email"
                   autoCapitalize="none"
                   autoComplete="email"
                   autoCorrect="off"
                   disabled={isLoading}
-                  name="email"
+                  name="username"
                   required
                   className="bg-[#2a3548] border-0 text-white placeholder:text-gray-400 focus-visible:ring-[#4361ee]"
                 />

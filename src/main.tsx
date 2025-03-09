@@ -27,6 +27,8 @@ import Test from "./Pages/dashboard/Test.tsx";
 import Observe from "./Pages/dashboard/Observe.tsx";
 import Profile from "./Pages/dashboard/Profile.tsx";
 import Settings from "./Pages/dashboard/Settings.tsx";
+import Project from "./Pages/Project.tsx";
+import EmailVerification from "./Pages/EmailVerification.tsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -34,8 +36,10 @@ const router = createBrowserRouter(
       <Route element={<PublicRoute />}>
         <Route path="signin" element={<Login />} />
         <Route path="signup" element={<Register />} />
+        <Route path="/verfiyEmail" element={<EmailVerification />} />
       </Route>
       <Route element={<PrivateRoute />}>
+        <Route path="/project" element={<Project />} />
         <Route element={<DashboardLayout />}>
           <Route path="/dashboard" element={<Overview />} />
           <Route path="/dashboard/agents" element={<Agents />} />

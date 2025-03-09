@@ -18,7 +18,7 @@ export default function Squads() {
         <Button>Create Squad</Button>
       </div>
 
-      <Card>
+      <Card className="rounded-lg border bg-white/30 shadow">
         <CardHeader>
           <CardTitle>Your Squads</CardTitle>
         </CardHeader>
@@ -30,10 +30,10 @@ export default function Squads() {
             <h3 className="text-lg font-semibold mb-2">
               No squads created yet
             </h3>
-            <p className="text-muted-foreground mb-6">
+            <p className="text-black mb-6">
               Create squads to organize your team and manage permissions.
             </p>
-            <Button>Create Squad</Button>
+            <Button className="bg-[#4361ee] hover:bg-[#3a56d4] text-white">Create Squad</Button>
           </div>
         </CardContent>
       </Card>

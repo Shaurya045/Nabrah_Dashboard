@@ -18,7 +18,7 @@ export default function Tools() {
         <Button>Add Tool</Button>
       </div>
 
-      <Card>
+      <Card className="rounded-lg border bg-white/30 shadow">
         <CardHeader>
           <CardTitle>Available Tools</CardTitle>
         </CardHeader>
@@ -30,10 +30,10 @@ export default function Tools() {
             <h3 className="text-lg font-semibold mb-2">
               No tools configured yet
             </h3>
-            <p className="text-muted-foreground mb-6">
+            <p className="text-black mb-6">
               Add tools to enhance your AI assistants' capabilities.
             </p>
-            <Button>Add Tool</Button>
+            <Button className="bg-[#4361ee] hover:bg-[#3a56d4] text-white">Add Tool</Button>
           </div>
         </CardContent>
       </Card>

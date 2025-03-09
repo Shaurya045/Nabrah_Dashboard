@@ -54,20 +54,20 @@ export default function Outbound() {
           </div>
         </div>
 
-        <div className="rounded-lg border bg-card text-card-foreground shadow">
+        <div className="rounded-lg border bg-white/30 shadow">
           <div className="flex flex-col items-center justify-center p-8 text-center">
             <div className="mb-4 rounded-full bg-muted p-3">
               <Phone className="h-10 w-10 text-muted-foreground" />
             </div>
-            <h3 className="text-lg font-semibold mb-2">
+            <h3 className="text-lg text-black font-semibold mb-2">
               No outbounds added yet
             </h3>
-            <p className="text-muted-foreground mb-6 max-w-sm">
+            <p className="text-black mb-6 max-w-sm">
               Add your first outbound to start handling calls with AI.
             </p>
             <Dialog open={isCreating} onOpenChange={setIsCreating}>
               <DialogTrigger asChild>
-                <Button>Add Outbound</Button>
+                <Button className="bg-[#4361ee] hover:bg-[#3a56d4] text-white">Add Outbound</Button>
               </DialogTrigger>
               <DialogContent>
                 <DialogHeader>

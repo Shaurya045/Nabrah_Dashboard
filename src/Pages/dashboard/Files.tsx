@@ -18,7 +18,7 @@ export default function Files() {
         <Button>Upload File</Button>
       </div>
 
-      <Card>
+      <Card className="rounded-lg border bg-white/30 shadow">
         <CardHeader>
           <CardTitle>Your Files</CardTitle>
         </CardHeader>
@@ -30,10 +30,10 @@ export default function Files() {
             <h3 className="text-lg font-semibold mb-2">
               No files uploaded yet
             </h3>
-            <p className="text-muted-foreground mb-6">
+            <p className="text-black mb-6">
               Upload files to train your AI assistants with custom knowledge.
             </p>
-            <Button>Upload File</Button>
+            <Button className="bg-[#4361ee] hover:bg-[#3a56d4] text-white">Upload File</Button>
           </div>
         </CardContent>
       </Card>

@@ -18,7 +18,7 @@ export default function Blocks() {
         <Button>Create Block</Button>
       </div>
 
-      <Card>
+      <Card className="rounded-lg border bg-white/30 shadow">
         <CardHeader>
           <CardTitle>Your Blocks</CardTitle>
         </CardHeader>
@@ -30,10 +30,10 @@ export default function Blocks() {
             <h3 className="text-lg font-semibold mb-2">
               No blocks created yet
             </h3>
-            <p className="text-muted-foreground mb-6">
+            <p className="text-black mb-6">
               Create reusable blocks to build complex AI workflows.
             </p>
-            <Button>Create Block</Button>
+            <Button className="bg-[#4361ee] hover:bg-[#3a56d4] text-white">Create Block</Button>
           </div>
         </CardContent>
       </Card>

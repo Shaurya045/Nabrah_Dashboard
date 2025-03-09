@@ -1,10 +1,13 @@
 import { Outlet } from "react-router-dom";
 import { AuthProvider } from "./contexts/AuthContext";
+import { ProjectProvider } from "./contexts/projectContext";
 
 function App() {
   return (
     <AuthProvider>
-      <Outlet />
+      <ProjectProvider>
+        <Outlet />
+      </ProjectProvider> 
     </AuthProvider>
   );
 }
